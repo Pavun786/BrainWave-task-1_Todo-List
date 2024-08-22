@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    
+}
+
+.container{
+    height: 100vh;
+    background-color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container div{
+
+  font-size:20px;
+}
+
+
+.lists{
+    padding: 20px;
+    
+}
+
+span,button{
+    margin: 5px;
+    padding: 5px;
+}
+
