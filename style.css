@@ -5,12 +5,15 @@
 
 .container{
     height: 100vh;
-    background-color:aliceblue;
+    background-color:antiquewhite;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
-    align-items: center;
-    gap: 10px;
+    align-items:center;
+    gap: 80px;
+    width: 100%;
+    
+    /* padding-top: 150px; */
 }
 
 .container div{
@@ -24,8 +27,78 @@
     
 }
 
+
+
 span,button{
     margin: 5px;
     padding: 5px;
 }
 
+.bannerImg{
+    width: 40%;
+}
+
+.todo-container{
+    width: 40%;
+}
+
+h3{
+    color:crimson;
+}
+
+.markbtn{
+    background-color: green;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    border:none;
+}
+
+.editbtn{
+    background-color:blue;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    border:none;
+}
+
+.deletebtn{
+    background-color:red;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    border:none;
+}
+
+#btn,#update{
+  background-color: black;
+  color: whitesmoke;
+  padding: 6px 20px;
+  
+  border:none;
+}
+
+@media screen and (max-width : 600px) {
+    .container{
+        height: 100vh;
+        background-color:aliceblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        gap: 80px;
+        width: 100%;
+        
+        /* padding-top: 150px; */
+    } 
+    
+    .bannerImg{
+        width: 70%;
+    }
+    
+    .todo-container{
+        width: 70%;
+        padding-left: 70px;
+       
+    }
+}

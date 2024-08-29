@@ -4,8 +4,11 @@ let checkedId;
 document.getElementById("update").style.display = "none";
 
 
+
 btn.addEventListener("click", () => {
+
     num += 1;
+    console.log(num)
     let res = document.getElementById("input").value;
     let lists = document.getElementById("lists");
 
@@ -29,6 +32,7 @@ btn.addEventListener("click", () => {
 
     let mark = document.createElement("button")
     mark.innerText = "Mark"
+    mark.setAttribute("class","markbtn")
     mark.addEventListener("click", function () {
         if (checkbox.checked == true) {
             checkedId = checkbox.id;
@@ -52,6 +56,7 @@ btn.addEventListener("click", () => {
 
     let update = document.createElement("button");
     let preId = "edit-"
+    update.setAttribute("class","editbtn")
     update.setAttribute("id", preId + num)
     update.innerText = "edit";
     update.addEventListener("click", function () {
@@ -67,12 +72,18 @@ btn.addEventListener("click", () => {
 
     let del = document.createElement("button")
     del.innerText = "delete";
+    del.setAttribute("class","deletebtn")
     del.addEventListener("click", function () {
         checkedId = checkbox.id;
         if (checkbox.checked == true) {
             console.log(`${checkedId}`)
             document.getElementById(`${idPrefix}${checkedId}`).style.display = "none"
+            document.getElementById("input").value = ""
+            document.getElementById("update").style.display = "none"
+             document.getElementById("btn").style.display = "inline"
         }
+
+      
     })
 
     division.append(checkbox, display, mark, update, del);
